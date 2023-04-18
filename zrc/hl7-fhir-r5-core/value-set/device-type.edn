@@ -1,0 +1,18 @@
+{ns hl7-fhir-r5-core.value-set.device-type,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+            :zen.fhir/version "0.6.20",
+            :fhir/code-systems #{{:fhir/url "urn:oid:2.16.840.1.113883.6.276",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "urn:iso:std:iso:11073:10101",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://snomed.info/sct",
+                                  :zen.fhir/content :not-present}},
+            :uri "http://hl7.org/fhir/ValueSet/device-type",
+            :version "5.0.0",
+            :ftr {:module "hl7-fhir-r5-core",
+                  :source-urls ["papka/r5/ValueSet-coverageeligibilityresponse-ex-auth-support.json/hl7.fhir.r5.core"],
+                  :source-type :igs,
+                  :ftr-path "ftr",
+                  :tag "init"}}}
