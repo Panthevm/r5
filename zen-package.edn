@@ -1,4 +1,2 @@
 {:deps
- {zen.fhir "https://github.com/zen-fhir/zen.fhir.git",
-  hl7-terminology-r5
-  "https://github.com/zen-fhir/hl7-terminology-r5.git"}}
+ {zen.fhir "https://github.com/zen-fhir/zen.fhir.git"}}
